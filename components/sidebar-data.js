@@ -3,7 +3,7 @@ const SIDEBAR_PROJECTS = [
     {
         id: 1,
         name: '신제품 런칭 광고',
-        thumbnail: 'CEN_img/SOLIUM_광고/Scene 1 - 언덕 위의 여성.png',
+        thumbnail: 'CEN_img/스케치이미지_여행사/1.png',
         currentStep: 2,
         lastUpdated: '어제',
         steps: [
@@ -37,7 +37,7 @@ const SIDEBAR_PROJECTS = [
     {
         id: 2,
         name: '봄 시즌 프로모션',
-        thumbnail: 'CEN_img/SOLIUM_광고/Scene 4 - 잎 위의 물방울.png',
+        thumbnail: 'CEN_img/스케치이미지_여행사/4.png',
         currentStep: 4,
         lastUpdated: '2일 전',
         steps: [
@@ -83,7 +83,7 @@ const SIDEBAR_PROJECTS = [
     {
         id: 3,
         name: '브랜드 스토리 영상',
-        thumbnail: 'CEN_img/SOLIUM_광고/Scene 8 - 브랜드 엔딩.png',
+        thumbnail: 'CEN_img/스케치이미지_여행사/8.png',
         currentStep: 3,
         lastUpdated: '3일 전',
         steps: [

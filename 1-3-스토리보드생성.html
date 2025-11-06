@@ -862,15 +862,11 @@
         }
 
         .new-scene-content {
-            width: 100%;
-            aspect-ratio: 16/9;
-            min-height: 250px;
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 16px;
-            position: relative;
         }
 
         .new-scene-icon {
@@ -1846,7 +1842,7 @@
 
                     <!-- New Scene Card -->
                     <div class="scene-card new-scene-card" onclick="createNewScene()">
-                        <div class="new-scene-content">
+                        <div class="scene-image new-scene-content">
                             <div class="new-scene-icon">
                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -1854,6 +1850,9 @@
                                 </svg>
                             </div>
                             <div class="new-scene-text">새 씬 생성</div>
+                        </div>
+                        <div class="scene-info">
+                            <div style="height: 62px;"></div>
                         </div>
                     </div>
                 </div>

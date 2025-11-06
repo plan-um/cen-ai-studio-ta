@@ -852,29 +852,23 @@
 
         /* New Scene Card */
         .new-scene-card {
-            border: 2px dashed var(--accent-blue);
-            transition: all 0.3s ease;
+            border: 2px dashed var(--accent-blue) !important;
+            background: var(--bg-tertiary) !important;
         }
 
         .new-scene-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--accent-blue);
+            border-color: var(--accent-blue) !important;
+            background: var(--bg-hover) !important;
         }
 
         .new-scene-content {
             width: 100%;
             aspect-ratio: 16/9;
-            background: var(--bg-tertiary);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 16px;
-        }
-
-        .new-scene-card:hover .new-scene-content {
-            background: var(--bg-hover);
         }
 
         .new-scene-icon {
@@ -891,6 +885,7 @@
 
         .new-scene-card:hover .new-scene-icon {
             background: var(--accent-blue-hover);
+            color: white;
             transform: scale(1.1);
         }
 

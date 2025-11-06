@@ -852,21 +852,29 @@
 
         /* New Scene Card */
         .new-scene-card {
-            border: 2px dashed var(--accent-blue) !important;
-            background: var(--bg-tertiary) !important;
+            background: var(--bg-tertiary);
+            border: 2px dashed var(--accent-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+            transition: all 0.3s ease;
         }
 
         .new-scene-card:hover {
-            border-color: var(--accent-blue) !important;
-            background: var(--bg-hover) !important;
+            background: var(--bg-hover);
+            border-color: var(--accent-blue);
+            border-style: dashed;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         .new-scene-content {
-            display: flex !important;
+            display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             gap: 16px;
+            padding: 40px;
         }
 
         .new-scene-icon {
@@ -1842,7 +1850,7 @@
 
                     <!-- New Scene Card -->
                     <div class="scene-card new-scene-card" onclick="createNewScene()">
-                        <div class="scene-image new-scene-content">
+                        <div class="new-scene-content">
                             <div class="new-scene-icon">
                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -1850,9 +1858,6 @@
                                 </svg>
                             </div>
                             <div class="new-scene-text">새 씬 생성</div>
-                        </div>
-                        <div class="scene-info">
-                            <div style="height: 62px;"></div>
                         </div>
                     </div>
                 </div>

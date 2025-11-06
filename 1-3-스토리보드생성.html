@@ -852,29 +852,29 @@
 
         /* New Scene Card */
         .new-scene-card {
-            background: var(--bg-tertiary);
             border: 2px dashed var(--accent-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 386.12px;
             transition: all 0.3s ease;
         }
 
         .new-scene-card:hover {
-            background: var(--bg-hover);
-            border-color: var(--accent-blue);
-            border-style: dashed;
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
+            border-color: var(--accent-blue);
         }
 
         .new-scene-content {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: var(--bg-tertiary);
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 16px;
-            padding: 40px;
+        }
+
+        .new-scene-card:hover .new-scene-content {
+            background: var(--bg-hover);
         }
 
         .new-scene-icon {
